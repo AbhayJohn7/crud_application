@@ -1,0 +1,127 @@
+/* Root variables for colors, fonts, and spacing */
+:root {
+  --primary-color: #4A90E2;
+  --secondary-color: #1A1A1A;
+  --background-color: #f4f7fc;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --font-family: 'Poppins', sans-serif;
+}
+
+/* Universal reset and body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--secondary-color);
+}
+
+/* App container */
+.App {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main box containing form and list */
+.box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--box-shadow-color);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Styling for headings */
+h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 40px;
+  
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: rgb(72, 72, 240);
+  color: #df8282;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 6px var(--box-shadow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Edit and delete button styles */
+ul li button {
+  width: auto;
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+ul li button:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+ul li input {
+  width: 70%;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+}
